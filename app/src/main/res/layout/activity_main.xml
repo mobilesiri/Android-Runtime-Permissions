@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="Contacts"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/secondary_text_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:text="Camera"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/secondary_text_light" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:drawableLeft="@android:drawable/ic_menu_mylocation"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/secondary_text_light" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="39dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2" />
+
+
+</RelativeLayout>
